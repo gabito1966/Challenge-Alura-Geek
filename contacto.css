@@ -1,16 +1,19 @@
 :root {
   --raleway: 'raleway';
-  --background-blanco: #F5F5F5;
-  --background-celeste: #EAF2FD;
-  --fuente-barra:#A2A2A2;
-  --fuente-banner:#FFFFFF;
-  --fuente-contacto:#464646;
-  --fuente-productos-azul:#2A7AE4;
-  --boton-contacto: #2A7AE4;
+  --fondo-blanco: #F5F5F5;
+  --fondo-celeste: #EAF2FD;
+  --fondo-azul: #2A7AE4;
+  --fuente-gris-claro:#A2A2A2;
+  --fuente-blanco:#FFFFFF;
+  --fuente-gris-oscuro:#464646;
+  --fuente-azul:#2A7AE4;
+  --font-medio:500;
+  --font-bold:700;
+  
 }
 
 .contacto {
-  background-color: var(--background-celeste);
+  background-color: var(--fondo-celeste);
   display: flex;
   margin: 0 auto;
   padding-top: 5vh;
@@ -61,9 +64,9 @@
 }
 
 .contacto__menu___item a {
-  color: var(--fuente-contacto);
+  color: var(--fuente-gris-oscuro);
   font-size: 16px;
-  font-weight: var(--font-medium);
+  font-weight: var(--font-regular);
   width: 100%;
   text-decoration: none;
 }
@@ -71,22 +74,22 @@
 .contacto__menu___item:hover {
   transform: scale(110%);
   transition: 100ms;
-  color: var(--color-azul-navy);
+  color: var(--fuente-azul);
 }
 
 .formulario {
   width: 50%;
 }
 .formulario__titulo {
-  color: var(--fuente-barra);
+  color: var(--fuente-gris-oscuro);
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 .formulario__nombre input {
-  color:var(--fuente-barra);
+  color:var(--fuente-gris-oscuro);
   font-size: 16px;
-  font-weight: var(--font-regular);
+  font-weight: 400;
   height: 56px;
   padding-left: 10px;
   padding-top: 12px;
@@ -94,9 +97,9 @@
 }
 
 .formulario__mensaje textarea {
-  color: var(--color-gris-medio);
+  color: var(--fuente-gris-oscuro);
   font-size: 16px;
-  font-weight: var(--font-regular);
+  font-weight: 400;
   width: 100%;
   height: 82px;
   padding-left: 10px;
@@ -105,21 +108,21 @@
 }
 
 .formulario__mensaje textarea::placeholder {
-  color: var(--color-gris-silver);
-  font-size: 16px;
-  font-weight: 500;
+  color: var(--fuente-gris-claro);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .nombre__placeholder {
   position: relative;
-  color: var(--color-gris-silver);
-  font-size: 16px;
-  font-weight: 500;
+  color: var(--fuente-gris-claro);
+  font-size: 12px;
+  font-weight: 400;
   bottom: 50px;
   left: 10px;
 }
 .btn {
-  background-color: var(--boton-contacto);
+  background-color: var(--fondo-azul);
   display: flex;
   flex-direction: row;
   justify-content: center;

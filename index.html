@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="productos.css">
     <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="agregar-productos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -195,12 +196,13 @@
             </div>
             <form action="" class="formulario">
                 <h3 class="formulario__titulo">Hable con nosotros</h3>
+                
                 <div class="formulario__nombre">
-                    <input type="text" name="nombre" required>
+                    <input type="text" name="nombre" required maxlength="40">
                     <h2 class="nombre__placeholder">Nombre</h2>
                 </div>
                 <div class="formulario__mensaje">
-                    <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" required maxlength="120"></textarea>
                     
                 </div>
                 <a href="#"><button class="btn">Enviar mensaje</button></a>
