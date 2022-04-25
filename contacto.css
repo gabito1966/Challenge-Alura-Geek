@@ -1,0 +1,136 @@
+:root {
+  --raleway: 'raleway';
+  --background-blanco: #F5F5F5;
+  --background-celeste: #EAF2FD;
+  --fuente-barra:#A2A2A2;
+  --fuente-banner:#FFFFFF;
+  --fuente-contacto:#464646;
+  --fuente-productos-azul:#2A7AE4;
+  --boton-contacto: #2A7AE4;
+}
+
+.contacto {
+  background-color: var(--background-celeste);
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 100%;
+}
+
+.contactoContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contacto__logo {
+  background-image: url(/assets/Logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 176px;
+  height: 50px;
+}
+
+.contacto__logo:hover {
+  transform: scale(130%);
+  transition: 200ms;
+  cursor:pointer;
+}
+
+.contacto__logoContainer {
+  display: flex;
+  width: 50%;
+}
+
+.contacto__logoContainer___img {
+  width: 50%;
+}
+
+.contacto__logoContainer___list {
+  height: 100%;
+  width: 50%;
+}
+
+.contacto__menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.contacto__menu___item a {
+  color: var(--fuente-contacto);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  width: 100%;
+  text-decoration: none;
+}
+
+.contacto__menu___item:hover {
+  transform: scale(110%);
+  transition: 100ms;
+  color: var(--color-azul-navy);
+}
+
+.formulario {
+  width: 50%;
+}
+.formulario__titulo {
+  color: var(--fuente-barra);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.formulario__nombre input {
+  color:var(--fuente-barra);
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  height: 56px;
+  padding-left: 10px;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.formulario__mensaje textarea {
+  color: var(--color-gris-medio);
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  width: 100%;
+  height: 82px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.formulario__mensaje textarea::placeholder {
+  color: var(--color-gris-silver);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nombre__placeholder {
+  position: relative;
+  color: var(--color-gris-silver);
+  font-size: 16px;
+  font-weight: 500;
+  bottom: 50px;
+  left: 10px;
+}
+.btn {
+  background-color: var(--boton-contacto);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  width: 144px;
+  height: 51px;
+  color: var(--fuente-blanco);
+  border: none;
+  font-size: 16px;
+}
+.btn:hover {
+  cursor: pointer;
+}
